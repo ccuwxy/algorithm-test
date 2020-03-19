@@ -17,7 +17,6 @@ package leetcode.offer04;
  */
 public class SolutionOffer04 {
     public static void main(String[] args) {
-
     }
 
     class Solution {
@@ -38,7 +37,6 @@ public class SolutionOffer04 {
                     }else {
                         i--;
                     }
-
                 }
             }
 

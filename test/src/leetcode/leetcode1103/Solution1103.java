@@ -31,7 +31,6 @@ class Solution {
                 i = candies;
                 candies = 0;
             }
-
             ans[temp] += i;
             i++;
         }

@@ -11,10 +11,12 @@ public class SolutionOffer06 {
     public static void main(String[] args) {
         Solution s = new Solution();
         System.out.println(s.replaceSpace("w x"));
+
     }
 
     static class Solution {
         public String replaceSpace(String s) {
+
             int count = 0;
             for(int i = 0; i < s.length();i++){
                 if(s.charAt(i)==' ')

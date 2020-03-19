@@ -31,7 +31,6 @@ public class Solution200 {
         char[][] a = {{'1','1','1','1','0'},{'1','1','0','1','0'},{'1','1','0','0','0'},{'0','0','0','0','0'}};
         System.out.println(s.numIslands(a));
         System.out.println(s.numIslands(a));
-
     }
 
     class Solution {

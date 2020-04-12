@@ -12,6 +12,42 @@ public class t2 {
      * @return int整型一维数组
      */
 
+
+    public static int[] GetPowerFactorNew (int R, int N) {
+        // write code here
+
+        if(R == 1) return new int[]{0};
+        if(N > R) return new int[0];
+        int count = 0, curr = 1;
+        while (curr < R){
+            curr *= N;
+            count++;
+        }
+        if(curr == R) return new int[]{count};
+        curr /= N;
+        count--;
+        ArrayList<Integer> res = new ArrayList<>();
+        while (R >= N){
+            boolean added = false;
+            if (R >= curr){
+                res.add(count);
+                R -= curr;
+                added = true;
+            }
+            if(added && R >= curr) return new int[0];
+            curr /= N;
+            count--;
+        }
+        if(R > 1) return new int[0];
+        else if(R == 1) res.add(0);
+        int[] ans = new int[res.size()];
+        int j = 0;
+        for (int i = res.size() - 1; i >= 0; i--) {
+            ans[j++] = res.get(i);
+        }
+        return ans;
+    }
+
     public static int[] GetPowerFactor(int R, int N) {
         int num = R;
         int temp;

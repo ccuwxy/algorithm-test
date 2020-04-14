@@ -1,4 +1,4 @@
-package nowcoder.ks2020;
+package nowcoder.kuaishou2020;
 
 import java.util.Scanner;
 import java.util.Stack;

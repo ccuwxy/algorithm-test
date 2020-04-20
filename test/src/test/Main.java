@@ -300,17 +300,14 @@ package test;////import java.util.*;
 //
 //}
 
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-import java.util.Stack;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
 //        int[] nums = {1, 2, 4, 7, 8, 11, 15};
 //        find(nums, 3);
-        Date date=new Date();
-        System.out.printf("%tD%n",date);
+        Date date = new Date();
+        System.out.printf("%tD%n", date);
         String str =
                 "";
         System.out.print(str.split(",").length);
@@ -319,7 +316,6 @@ public class Main {
     public static void find(int[] nums, int target) {
         List<int[]> list = new ArrayList<>();
         int a, b;
-
         for (int i = 0; i < nums.length; i++) {
             for (int j = 0; j < nums.length; j++) {
                 a = nums[i];
@@ -341,31 +337,31 @@ public class Main {
     public static void test(ListNode node) {
         Stack<Integer> stack = new Stack<>();
         ListNode head = node;
-        while (head!=null){
+        while (head != null) {
             stack.push(head.value);
             head = head.next;
         }
-        while (node!=null){
-            if(stack.pop()!=node.value){
+        while (node != null) {
+            if (stack.pop() != node.value) {
                 System.out.println("false");
                 return;
             }
-            node=node.next;
+            node = node.next;
         }
         System.out.println("true");
     }
 
-    public static void delete(ListNode node,int k){
+    public static void delete(ListNode node, int k) {
         int i = 0;
-        if(k == 1){
+        if (k == 1) {
             node = node.next;
             test(node);
             return;
         }
         ListNode head = node;
-        while (head!=null){
+        while (head != null) {
             i++;
-            if(i==k){
+            if (i == k) {
                 head.next = head.next.next;
                 test(node);
             }

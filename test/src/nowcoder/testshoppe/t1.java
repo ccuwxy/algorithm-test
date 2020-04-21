@@ -2,12 +2,16 @@ package nowcoder.testshoppe;
 
 import java.util.Scanner;
 
+/**
+ * 无重复字符的最长子串
+ */
 public class t1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String str = sc.next();
         System.out.println(lengthOfLongestSubstring(str));
     }
+    //无重复字符的最长子串
     public static int lengthOfLongestSubstring(String s) {
         if (s.length() == 1 || s.length() == 0)
             return s.length();

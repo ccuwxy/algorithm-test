@@ -16,6 +16,7 @@ public class t3 {
         System.out.println(max(nums));
     }
 
+    //能被三整除的元素最大和
     public static int max(int[] nums) {
         int dp[] = new int[4];
         dp[0] = 0;

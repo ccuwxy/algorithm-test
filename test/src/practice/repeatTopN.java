@@ -2,7 +2,7 @@ package practice;
 
 import java.util.*;
 
-public class topN {
+public class repeatTopN {
     public static void main(String[] args) {
         System.out.println(topKFrequent(new int[]{1, 2, 3, 3, 3, 3, 3, 2, 1, 1, 1}, 2));
     }

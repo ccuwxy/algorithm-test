@@ -1,4 +1,4 @@
-package duxiaoman;
+package acmcoder.duxiaoman;
 
 import java.util.Scanner;
 

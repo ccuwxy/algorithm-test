@@ -6,10 +6,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class t2 {
-    /**             a b c d e f g h i g k l m n o p q r s t u v w x y z
-     * eight                1     1 1 1                   1
-     * nine                 1     . 1 .       2           .
-     */
+
     public static void main(String[] args) {
         List<Integer> list = new ArrayList<>();
         Scanner sc = new Scanner(System.in);
